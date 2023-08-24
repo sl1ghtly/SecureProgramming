@@ -1,0 +1,15 @@
+Bug 1:
+
+In addCashier.java, on line 54, there is a pass variable storing the input of the passwordField using getText(),
+since the method is deprecated, it is important that we change it to getPassword().
+
+Deprecated classes are methods that are no longer important and shouldn't be used at all. It is better to remove them
+because they could not exist in a few years.
+
+Bug 2:
+
+In addProduct.java, on line 67, there are two items being compared using == rather than using the equals() method.
+It is better to use the equals method because that way we are able to compare their primitive values.
+
+The == and!= operators compare object references rather than object values,
+which is why they cannot directly compare the values of boxed primitives.
